@@ -2,11 +2,23 @@
 
 <head>
     <style>
-        .bigText {
-            font-size: 5rem;
-
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 10px;
         }
 
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            margin-left: 5px;
+            grid-column: 1 / 2;
+        }
+
+        
         .box {
             border: 5px solid black;
             margin-right: 400px;
@@ -17,7 +29,7 @@
         }
 
         .button {
-            background-color:green;
+            background-color: green;
             color: white;
             padding: 15px 32px;
             text-align: center;
@@ -25,22 +37,17 @@
             margin: 4px 2px;
             cursor: pointer;
         }
-        .input1 {
-            margin-left: 450px;
-            margin-top: 1px;
-        }
     </style>
 </head>
 
 <body>
     <div class="box">
-        <form>
-            <label class="bigText">Temperature</label>
-            <input type="number" id="Temp" class="input1" width=20%>
-            <label class="bigText" for="moisture">Moisture</label>
-            <input type="number" id="Moisture" class="input1">
+        <div class="grid"></div>
+        <div class="grid-item">temperature</div>
+        <div class="grid-item"> 88</div>
+        <div class="grid-item">moisture</div>
+        <div class="grid-item">100</div>
 
-        </form>
         <form>
             <input type="button" id="ON" class="button" value="ON"></Input>
             <input type="button" id="OFF" class="button" value="OFF"></input>
