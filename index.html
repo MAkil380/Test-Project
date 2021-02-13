@@ -2,23 +2,21 @@
 
 <head>
     <style>
-        .grid {
+        .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+            background-color: black;
+            padding: 2px;
+        }
+
+        .grid-container>div {
             background-color: white;
-            padding: 10px;
+            text-align: center;
+            padding: 2px 0;
+            font-size: 50px;
         }
 
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 30px;
-            margin-left: 5px;
-            grid-column: 1 / 2;
-        }
-
-        
         .box {
             border: 5px solid black;
             margin-right: 400px;
@@ -42,16 +40,17 @@
 
 <body>
     <div class="box">
-        <div class="grid"></div>
-        <div class="grid-item">temperature</div>
-        <div class="grid-item"> 88</div>
-        <div class="grid-item">moisture</div>
-        <div class="grid-item">100</div>
-
+        <div class="grid-container">
+            <div class="item1">Temperature</div>
+            <div class="item2">88</div>
+            <div class="item5">moisture</div>
+            <div class="item7">7</div>
+        </div>
         <form>
             <input type="button" id="ON" class="button" value="ON"></Input>
             <input type="button" id="OFF" class="button" value="OFF"></input>
         </form>
+
     </div>
 </body>
 
