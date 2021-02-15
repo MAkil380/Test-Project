@@ -1,34 +1,16 @@
 <html>
 
 <head>
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        .flex-container1 {
-            display: flex;
-            background-color: white;
-            flex-grow: 2;
-            justify-content: space-between;
-        }
-        .flex-container1 > div {
-            background-color: white;
-            margin:10px;
-            padding: 1px;
-            font-size: 40px;
-            
-        }
-        .flex-container2 {
-            display: flex;
-            background-color: white;
-            flex-grow: 2;
-            justify-content: space-between;
-            margin-right: 170px;
-        }
-        .flex-container2 > div {
-            background-color: white;
-            margin:10px;
-            padding: 1px;
-            font-size: 40px;
-    
-
+        .col {
+            font-size: 50px;
         }
 
         .box {
@@ -55,14 +37,14 @@
 
 <body>
     <div class="box">
-        <div class="flex-container1">
-            <div class="item1">Temperature</div>
-            <div class="item2">88</div>
+        <div class="row">
+            <div class="col">Temperature</div>
+            <div class="col">88</div>
             <br>
         </div>
-        <div class="flex-container2">
-            <div class="item1">Moisture</div>
-            <div class="item2">7</div>
+        <div class="row">
+            <div class="col">Moisture</div>
+            <div class="col">7</div>
         </div>
         <form>
             <input type="button" id="ON" class="button" value="ON"></Input>
